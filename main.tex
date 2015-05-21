@@ -1,5 +1,10 @@
 \documentclass{beamer}
+\beamertemplatenavigationsymbolsempty
 \usepackage{lmodern}
+\usepackage{helvet}
+  \renewcommand{\familydefault}{\sfdefault}
+\usepackage{pdfcomment}
+    \newcommand{\pdfnote}[1]{\marginnote{\pdfcomment[icon=note]{#1}}}
 
 \mode<presentation>
 {
@@ -100,8 +105,8 @@
             \item ASP
             \item C
             \item C\#
-            \item Ruby
-            \item Rails
+            \item Ruby \& Rails
+            \item Python \& Django
             \item Powershell
           \end{itemize}
       \end{columns}
@@ -109,6 +114,54 @@
 
 \section{The Ageing Code}
 
+  \begin{frame}{System}
+    \begin{itemize}
+      \item Accounting system for my Company
+      \pause
+      \item Database designed in mid 90s R\&D Project
+      \pause
+      \item Lotus Approach
+      \pause
+      \item Microsoft Access
+      \pause
+      \item Microsoft SQL Server + .NET client
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Why Change?}
+    \begin{itemize}
+      \item Server Licence costs
+      \pause
+      \item Windows development environment
+    \end{itemize}
+  \end{frame}
+
 \section{The Way Forward}
+
+  \begin{frame}{Frameworks}
+    \begin{itemize}
+      \item Ruby \& Rails
+      \pdfnote{
+        Rails is opinionated - convention over configuration\textCR
+        DB design doesn't fit with Rails convention}
+      \pause
+      \item Scala \& Play
+      \pdfnote{
+        Scala was a joy to use\textCR
+        Play is immature. Not enough standard packages
+      }
+      \pause
+      \item Node.js
+      \pause
+      \item Python \& Django
+      \pdfnote{
+        Legacy database no problem\textCR
+        Multiple database no problem\textCR
+        Django Rest Framework\textCR
+      }
+      \pause
+      \item AngularJS front end
+    \end{itemize}
+  \end{frame}
 
 \end{document}

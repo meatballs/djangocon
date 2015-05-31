@@ -28,7 +28,11 @@
   \titlepage{}
 \end{frame}
 
-\section{Introduction}
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents
+  \end{frame}
+}
 
 \section{The Ageing Coder}
 
@@ -52,7 +56,6 @@
         \begin{figure}
           \includegraphics[scale=0.3]{images/3t07}
         \end{figure}
-        \pause
       \column{0.33\textwidth}
         \begin{figure}
           \includegraphics[scale=0.35]{images/tdkc60}
@@ -77,7 +80,6 @@
   \begin{frame}{University}
     \begin{figure}
       \includegraphics[scale=0.1]{images/8086}
-      \pause
       \includegraphics[scale=0.5]{images/6800}
     \end{figure}
     \pause
@@ -125,6 +127,7 @@
       \item Microsoft Access
       \pause
       \item Microsoft SQL Server + .NET client
+      \item Logic coded as TSQL Stored Procedures
     \end{itemize}
   \end{frame}
 
@@ -144,24 +147,39 @@
       \pdfnote{
         Rails is opinionated - convention over configuration\textCR
         DB design doesn't fit with Rails convention}
-      \pause
       \item Scala \& Play
       \pdfnote{
         Scala was a joy to use\textCR
         Play is immature. Not enough standard packages
       }
-      \pause
-      \item Node.js
-      \pause
+      \item Javascript \& Node.js
       \item Python \& Django
       \pdfnote{
         Legacy database no problem\textCR
         Multiple database no problem\textCR
         Django Rest Framework\textCR
       }
-      \pause
-      \item AngularJS front end
     \end{itemize}
   \end{frame}
+
+  \begin{frame}{Design}
+    \begin{columns}
+      \column{0.5\textwidth}
+        \begin{itemize}
+          \item Postgresql Database
+          \item Django Rest Framework
+          \item Logic as Django/DRF code
+          \pause
+        \end{itemize}
+      \column{0.5\textwidth}
+        \begin{itemize}
+          \item AngularJS UI
+          \item Coffeescript
+          \item UI served separately
+        \end{itemize}
+    \end{columns}
+  \end{frame}
+
+  \section{Demo}
 
 \end{document}
